@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="structssc__pi540D__plan" kind="struct"><name>ssc_pi540D_plan</name>
+    <member refid="structssc__pi540D__plan_1a87d748ca1ce14bfe3e583a35e89674f0" kind="variable"><name>output</name></member>
+    <member refid="structssc__pi540D__plan_1ab0a19ba00ca3094c386f18344c97459f" kind="variable"><name>input</name></member>
+    <member refid="structssc__pi540D__plan_1add3be20b679c31ea3fbf093867f75c9f" kind="variable"><name>input0</name></member>
+    <member refid="structssc__pi540D__plan_1ac8b5861ef737c6fde07e43fd2e7f5b09" kind="variable"><name>input1</name></member>
+    <member refid="structssc__pi540D__plan_1a742da3eee458fd55e4c6373a9f8169d7" kind="variable"><name>input2</name></member>
+    <member refid="structssc__pi540D__plan_1ab006719c3eaaed2f4f9763c8665b31d4" kind="variable"><name>input3</name></member>
+    <member refid="structssc__pi540D__plan_1a4e67a3c2de1a2feaac9eb50611b2a02b" kind="variable"><name>ix</name></member>
+    <member refid="structssc__pi540D__plan_1af88ec8edb409d95d10ff77054474309e" kind="variable"><name>iy</name></member>
+  </compound>
+  <compound refid="dummy_8c" kind="file"><name>dummy.c</name>
+    <member refid="dummy_8c_1a6288eba0f8e8ad3ab1544ad731eb7667" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="ssc__pimega__pi540D_8cu" kind="file"><name>ssc_pimega_pi540D.cu</name>
+    <member refid="ssc__pimega__pi540D_8cu_1af364fdcda3ea63d2658b449c8f3465ca" kind="function"><name>kernel_pi540D_backward_stripe</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1a45d986802a0c2b7b13c89c4c31a872fb" kind="function"><name>kernel_pi540D_backward_stripe_block</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1afcfebc975368085b7902dc8a8c3df701" kind="function"><name>kernel_pi540D_initialize</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1a7cdbea0bf1e133924ad81b211b1d4456" kind="function"><name>function_pi540D_initialize</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1a0a436789028879312334e2dbd8399774" kind="function"><name>ssc_pimega_pi540D_restoration_worker</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1ad57ce2ebace05254051185a6f94b6608" kind="function"><name>ssc_pimega_pi540D_restoration_worker_block</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1af9af5490a9c6233906edb452c979298b" kind="function"><name>ssc_pimega_pi540D_create_gpu_plan</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1aa6b48d7bc38bda86fb8cd1903c9d8698" kind="function"><name>ssc_pimega_pi540D_create_gpu_plan_block</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1a66d28583788308c52974a369b1571feb" kind="function"><name>ssc_pimega_pi540D_free_gpu_plan</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1a9885e16ffd1dfa7166bef845fb491562" kind="function"><name>ssc_pimega_pi540D_free_gpu_plan_block</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1a3d8a9b3d257f8ca4201d5c5a265caf3d" kind="function"><name>ssc_pimega_pi540D_set_gpu_data</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1a5470799a91d34098c58803647aa54d4f" kind="function"><name>ssc_pimega_pi540D_set_gpu_lut</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1a738b8cabe5abd73db51a49f50d9f37eb" kind="function"><name>ssc_pimega_pi540D_set_gpu_data_block</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1aa3191a3baaef1730f0278e56c6e219ba" kind="function"><name>ssc_pimega_pi540D_get_gpu_data</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1a5bd13291aa28f10d194284a273a5b4bf" kind="function"><name>ssc_pimega_pi540D_get_gpu_data_block</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1a56e0d23d13f831fe914b247d2e481bb2" kind="function"><name>ssc_pimega_pi540D_backward_gpu</name></member>
+    <member refid="ssc__pimega__pi540D_8cu_1a7d8f575613d8c7221951994bcd057214" kind="function"><name>ssc_pimega_pi540D_backward_gpu_block</name></member>
+  </compound>
+  <compound refid="ssc__pimega__pi540D_8h" kind="file"><name>ssc_pimega_pi540D.h</name>
+    <member refid="ssc__pimega__pi540D_8h_1a72593b46c51ce849fc54bd82bb46f27c" kind="define"><name>SSC_MIN</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1aa2c13c97ed7c5fbd48bb4dd333e288e9" kind="define"><name>SSC_MAX</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1ae2c46600b51fece69f053f83dc61bc40" kind="define"><name>SSC_SQUARE</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1afee3181e4b46b0caa985cedc55f39b3f" kind="define"><name>SSC_SIGN</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1ab601fbaf4054077850c5bd86216f5e08" kind="define"><name>SSC_PI</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1aaa40a3f48811b3485a7ff88c4ef90af8" kind="define"><name>TPBX</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1a5a7b431789ba2cf01ad4588e492ed62a" kind="define"><name>TPBY</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1ae4d5f6af6f9f5c61191656e87ebfb12d" kind="define"><name>TPBZ</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1a24e29e6e7f455d30e0e68f03d8706391" kind="define"><name>N540D</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1a7b4e1e2f86beb0781a00a18f743c26be" kind="define"><name>N135D</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1a3dad4a600811664aa9bb844fadd705ed" kind="define"><name>NCHIP</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1a6cf5a8df88ce63e36618c10fd9856c72" kind="define"><name>NSTRIPES</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1a0259c04467b257e32c7169b41888a440" kind="define"><name>NSMOD</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1abce96437734c313a3b019c7b8783aeb6" kind="define"><name>NMOD</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1a31f99d9c502b52b5f36dc7e2028c2e80" kind="define"><name>BILLION</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1a3be7ef61d339af381862a81d4b363efb" kind="define"><name>CLOCK</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1af343c0314be60ac994d3a7ede5ba4848" kind="define"><name>TIME</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1a0a436789028879312334e2dbd8399774" kind="function"><name>ssc_pimega_pi540D_restoration_worker</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1af9af5490a9c6233906edb452c979298b" kind="function"><name>ssc_pimega_pi540D_create_gpu_plan</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1a66d28583788308c52974a369b1571feb" kind="function"><name>ssc_pimega_pi540D_free_gpu_plan</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1a3d8a9b3d257f8ca4201d5c5a265caf3d" kind="function"><name>ssc_pimega_pi540D_set_gpu_data</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1aa3191a3baaef1730f0278e56c6e219ba" kind="function"><name>ssc_pimega_pi540D_get_gpu_data</name></member>
+    <member refid="ssc__pimega__pi540D_8h_1a56e0d23d13f831fe914b247d2e481bb2" kind="function"><name>ssc_pimega_pi540D_backward_gpu</name></member>
+  </compound>
+  <compound refid="dir_7f72761faf76ad5b97d7f36c114afa29" kind="dir"><name>/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda</name>
+  </compound>
+  <compound refid="dir_ea391df6eff8c05a1d61fc70822e6d3c" kind="dir"><name>/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src</name>
+  </compound>
+</doxygenindex>

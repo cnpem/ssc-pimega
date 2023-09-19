@@ -1,0 +1,15 @@
+540D
+====
+
+The available functions for computing PIMEGA/540D image restoration are listed below.
+
+FUNCTIONS
+*********
+
+.. autofunction:: sscPimega.pi540D.pi540D.dictionary540D
+.. autofunction:: sscPimega.pi540D.pi540D.geometry540D
+.. autofunction:: sscPimega.pi540D.pi540D.backward540D
+.. autofunction:: sscPimega.pi540D.pi540D.forward540D
+.. autofunction:: sscPimega.pi540D.pi540D.ioSet_Backward540D
+.. autofunction:: sscPimega.pi540D.pi540D.ioGet_Backward540D
+.. autofunction:: sscPimega.pi540D.pi540D.ioClean_Backward540D

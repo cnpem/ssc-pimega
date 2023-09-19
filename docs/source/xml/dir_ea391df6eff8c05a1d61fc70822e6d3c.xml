@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_ea391df6eff8c05a1d61fc70822e6d3c" kind="dir">
+    <compoundname>/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src</compoundname>
+    <innerfile refid="dummy_8c">dummy.c</innerfile>
+    <innerfile refid="ssc__pimega__pi540D_8cu">ssc_pimega_pi540D.cu</innerfile>
+    <innerfile refid="ssc__pimega__pi540D_8h">ssc_pimega_pi540D.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/"/>
+  </compounddef>
+</doxygen>

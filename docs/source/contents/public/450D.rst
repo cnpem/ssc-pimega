@@ -1,0 +1,12 @@
+450D
+====
+
+The available functions for computing PIMEGA/450D image restoration are listed below.
+
+FUNCTIONS
+*********
+
+.. autofunction:: sscPimega.pi450D.pi450D.dictionary450D
+.. autofunction:: sscPimega.pi450D.pi450D.geometry450D
+.. autofunction:: sscPimega.pi450D.pi450D.backward450D
+.. autofunction:: sscPimega.pi450D.pi450D.rings450D

@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="ssc__pimega__pi540D_8h" kind="file" language="C++">
+    <compoundname>ssc_pimega_pi540D.h</compoundname>
+    <includes local="no">cuda_runtime.h</includes>
+    <includes local="no">helper_cuda.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">pthread.h</includes>
+    <includes local="no">cuda.h</includes>
+    <includes local="no">cufft.h</includes>
+    <includes local="no">cuComplex.h</includes>
+    <includedby refid="ssc__pimega__pi540D_8cu" local="yes">/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.cu</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>helper_cuda.h</label>
+      </node>
+      <node id="9">
+        <label>cufft.h</label>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2">
+        <label>cuda_runtime.h</label>
+      </node>
+      <node id="7">
+        <label>pthread.h</label>
+      </node>
+      <node id="10">
+        <label>cuComplex.h</label>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+      <node id="8">
+        <label>cuda.h</label>
+      </node>
+      <node id="1">
+        <label>/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h</label>
+        <link refid="ssc__pimega__pi540D_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structssc__pi540D__plan" prot="public">ssc_pi540D_plan</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1a72593b46c51ce849fc54bd82bb46f27c" prot="public" static="no">
+        <name>SSC_MIN</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>( ( ( a ) &lt; ( b ) ) ? ( a ) : ( b ) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="17" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1aa2c13c97ed7c5fbd48bb4dd333e288e9" prot="public" static="no">
+        <name>SSC_MAX</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>( ( ( a ) &gt; ( b ) ) ? ( a ) : ( b ) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="18" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1ae2c46600b51fece69f053f83dc61bc40" prot="public" static="no">
+        <name>SSC_SQUARE</name>
+        <param><defname>x</defname></param>
+        <initializer>((x)*(x))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="19" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1afee3181e4b46b0caa985cedc55f39b3f" prot="public" static="no">
+        <name>SSC_SIGN</name>
+        <param><defname>x</defname></param>
+        <initializer>( ( ( x ) &gt; 0.0 ) ? 1.0 : ( ( ( x ) &lt; 0.0 ) ? -1.0 : 0.0 ) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="20" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1ab601fbaf4054077850c5bd86216f5e08" prot="public" static="no">
+        <name>SSC_PI</name>
+        <initializer>3.141592653589793238462643383279502884</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="21" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1aaa40a3f48811b3485a7ff88c4ef90af8" prot="public" static="no">
+        <name>TPBX</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="23" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1a5a7b431789ba2cf01ad4588e492ed62a" prot="public" static="no">
+        <name>TPBY</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="24" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1ae4d5f6af6f9f5c61191656e87ebfb12d" prot="public" static="no">
+        <name>TPBZ</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="25" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1a24e29e6e7f455d30e0e68f03d8706391" prot="public" static="no">
+        <name>N540D</name>
+        <initializer>3072</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="26" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1a7b4e1e2f86beb0781a00a18f743c26be" prot="public" static="no">
+        <name>N135D</name>
+        <initializer>1536</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="27" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1a3dad4a600811664aa9bb844fadd705ed" prot="public" static="no">
+        <name>NCHIP</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="28" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1a6cf5a8df88ce63e36618c10fd9856c72" prot="public" static="no">
+        <name>NSTRIPES</name>
+        <initializer>24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="29" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1a0259c04467b257e32c7169b41888a440" prot="public" static="no">
+        <name>NSMOD</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="30" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1abce96437734c313a3b019c7b8783aeb6" prot="public" static="no">
+        <name>NMOD</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="31" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1a31f99d9c502b52b5f36dc7e2028c2e80" prot="public" static="no">
+        <name>BILLION</name>
+        <initializer>1E9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="33" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1a3be7ef61d339af381862a81d4b363efb" prot="public" static="no">
+        <name>CLOCK</name>
+        <initializer>CLOCK_REALTIME</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="34" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ssc__pimega__pi540D_8h_1af343c0314be60ac994d3a7ede5ba4848" prot="public" static="no">
+        <name>TIME</name>
+        <param><defname>End</defname></param>
+        <param><defname>Start</defname></param>
+        <initializer>(End.tv_sec - Start.tv_sec) + (End.tv_nsec-Start.tv_nsec)/BILLION</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="35" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ssc__pimega__pi540D_8h_1a0a436789028879312334e2dbd8399774" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssc_pimega_pi540D_restoration_worker</definition>
+        <argsstring>(ssc_pi540D_plan *workspace, int z, float *elapsed)</argsstring>
+        <name>ssc_pimega_pi540D_restoration_worker</name>
+        <param>
+          <type><ref refid="structssc__pi540D__plan" kindref="compound">ssc_pi540D_plan</ref> *</type>
+          <declname>workspace</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>elapsed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="49" column="8" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.cu" bodystart="156" bodyend="201" declfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" declline="49" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="ssc__pimega__pi540D_8h_1af9af5490a9c6233906edb452c979298b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssc_pimega_pi540D_create_gpu_plan</definition>
+        <argsstring>(ssc_pi540D_plan *workspace, int z)</argsstring>
+        <name>ssc_pimega_pi540D_create_gpu_plan</name>
+        <param>
+          <type><ref refid="structssc__pi540D__plan" kindref="compound">ssc_pi540D_plan</ref> *</type>
+          <declname>workspace</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="53" column="8" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.cu" bodystart="257" bodyend="270" declfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" declline="53" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="ssc__pimega__pi540D_8h_1a66d28583788308c52974a369b1571feb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssc_pimega_pi540D_free_gpu_plan</definition>
+        <argsstring>(ssc_pi540D_plan *workspace)</argsstring>
+        <name>ssc_pimega_pi540D_free_gpu_plan</name>
+        <param>
+          <type><ref refid="structssc__pi540D__plan" kindref="compound">ssc_pi540D_plan</ref> *</type>
+          <declname>workspace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="56" column="8" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.cu" bodystart="290" bodyend="299" declfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" declline="56" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="ssc__pimega__pi540D_8h_1a3d8a9b3d257f8ca4201d5c5a265caf3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssc_pimega_pi540D_set_gpu_data</definition>
+        <argsstring>(ssc_pi540D_plan *workspace, float *input0, float *input1, float *input2, float *input3, int *ix, int *iy, int z, float *elapsed)</argsstring>
+        <name>ssc_pimega_pi540D_set_gpu_data</name>
+        <param>
+          <type><ref refid="structssc__pi540D__plan" kindref="compound">ssc_pi540D_plan</ref> *</type>
+          <declname>workspace</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>input0</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>input1</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>input2</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>input3</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>ix</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>iy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>elapsed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="58" column="8" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.cu" bodystart="315" bodyend="346" declfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" declline="58" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="ssc__pimega__pi540D_8h_1aa3191a3baaef1730f0278e56c6e219ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssc_pimega_pi540D_get_gpu_data</definition>
+        <argsstring>(float *host, ssc_pi540D_plan *workspace, int z, float *elapsed)</argsstring>
+        <name>ssc_pimega_pi540D_get_gpu_data</name>
+        <param>
+          <type>float *</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type><ref refid="structssc__pi540D__plan" kindref="compound">ssc_pi540D_plan</ref> *</type>
+          <declname>workspace</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>elapsed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="68" column="8" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.cu" bodystart="400" bodyend="414" declfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" declline="68" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="ssc__pimega__pi540D_8h_1a56e0d23d13f831fe914b247d2e481bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ssc_pimega_pi540D_backward_gpu</definition>
+        <argsstring>(float *output, float *input0, float *input1, float *input2, float *input3, int *ix, int *iy, int z, int device)</argsstring>
+        <name>ssc_pimega_pi540D_backward_gpu</name>
+        <param>
+          <type>float *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>input0</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>input1</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>input2</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>input3</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>ix</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>iy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="73" column="8" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.cu" bodystart="437" bodyend="467" declfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" declline="73" declcolumn="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SSC_PIMEGA_PI540D_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SSC_PIMEGA_PI540D_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cuda_runtime.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;helper_cuda.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cuda.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cufft.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cuComplex.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cuda_runtime.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SSC_MIN(<sp/>a,<sp/>b<sp/>)<sp/>(<sp/>(<sp/>(<sp/>a<sp/>)<sp/>&lt;<sp/>(<sp/>b<sp/>)<sp/>)<sp/>?<sp/>(<sp/>a<sp/>)<sp/>:<sp/>(<sp/>b<sp/>)<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SSC_MAX(<sp/>a,<sp/>b<sp/>)<sp/>(<sp/>(<sp/>(<sp/>a<sp/>)<sp/>&gt;<sp/>(<sp/>b<sp/>)<sp/>)<sp/>?<sp/>(<sp/>a<sp/>)<sp/>:<sp/>(<sp/>b<sp/>)<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SSC_SQUARE(x)<sp/>((x)*(x))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SSC_SIGN(<sp/>x<sp/>)<sp/>(<sp/>(<sp/>(<sp/>x<sp/>)<sp/>&gt;<sp/>0.0<sp/>)<sp/>?<sp/>1.0<sp/>:<sp/>(<sp/>(<sp/>(<sp/>x<sp/>)<sp/>&lt;<sp/>0.0<sp/>)<sp/>?<sp/>-1.0<sp/>:<sp/>0.0<sp/>)<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SSC_PI<sp/>3.141592653589793238462643383279502884</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TPBX<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TPBY<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TPBZ<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N540D<sp/>3072<sp/><sp/><sp/>//540D<sp/>project<sp/>dimension</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N135D<sp/>1536<sp/><sp/><sp/>//135D<sp/>project<sp/>dimension</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NCHIP<sp/>256<sp/><sp/><sp/><sp/>//chip<sp/>dimension<sp/>(medipix)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NSTRIPES<sp/>24<sp/><sp/>//number<sp/>of<sp/>stripes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NSMOD<sp/>6<sp/><sp/><sp/><sp/><sp/><sp/>//number<sp/>of<sp/>stripes<sp/>per<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NMOD<sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//number<sp/>of<sp/>modules</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BILLION<sp/>1E9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLOCK<sp/><sp/>CLOCK_REALTIME</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIME(End,Start)<sp/>(End.tv_sec<sp/>-<sp/>Start.tv_sec)<sp/>+<sp/>(End.tv_nsec-Start.tv_nsec)/BILLION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structssc__pi540D__plan" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input,<sp/>*input0,<sp/>*input1,<sp/>*input2,<sp/>*input3;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ix,<sp/>*iy;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}<ref refid="structssc__pi540D__plan" kindref="compound">ssc_pi540D_plan</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssc_pimega_pi540D_restoration_worker(<ref refid="structssc__pi540D__plan" kindref="compound">ssc_pi540D_plan</ref><sp/>*workspace,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*elapsed);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssc_pimega_pi540D_create_gpu_plan(<ref refid="structssc__pi540D__plan" kindref="compound">ssc_pi540D_plan</ref><sp/>*workspace,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssc_pimega_pi540D_free_gpu_plan(<ref refid="structssc__pi540D__plan" kindref="compound">ssc_pi540D_plan</ref><sp/>*workspace);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssc_pimega_pi540D_set_gpu_data(<ref refid="structssc__pi540D__plan" kindref="compound">ssc_pi540D_plan</ref><sp/>*workspace,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input0,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input1,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input2,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input3,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ix,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*iy,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*elapsed);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssc_pimega_pi540D_get_gpu_data(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*host,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structssc__pi540D__plan" kindref="compound">ssc_pi540D_plan</ref><sp/>*workspace,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*elapsed);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ssc_pimega_pi540D_backward_gpu(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*output,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input0,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input1,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input2,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*input3,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ix,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*iy,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>device);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>extern<sp/>&quot;C&quot;<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>#ifndef<sp/>SSC_PIMEGA_PI540D_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h"/>
+  </compounddef>
+</doxygen>

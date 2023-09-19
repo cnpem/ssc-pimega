@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structssc__pi540D__plan" kind="struct" language="C++" prot="public">
+    <compoundname>ssc_pi540D_plan</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structssc__pi540D__plan_1a87d748ca1ce14bfe3e583a35e89674f0" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* ssc_pi540D_plan::output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="39" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structssc__pi540D__plan_1ab0a19ba00ca3094c386f18344c97459f" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* ssc_pi540D_plan::input</definition>
+        <argsstring></argsstring>
+        <name>input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="40" column="9" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structssc__pi540D__plan_1add3be20b679c31ea3fbf093867f75c9f" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float * ssc_pi540D_plan::input0</definition>
+        <argsstring></argsstring>
+        <name>input0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="40" column="15" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structssc__pi540D__plan_1ac8b5861ef737c6fde07e43fd2e7f5b09" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float * ssc_pi540D_plan::input1</definition>
+        <argsstring></argsstring>
+        <name>input1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="40" column="22" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structssc__pi540D__plan_1a742da3eee458fd55e4c6373a9f8169d7" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float * ssc_pi540D_plan::input2</definition>
+        <argsstring></argsstring>
+        <name>input2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="40" column="29" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structssc__pi540D__plan_1ab006719c3eaaed2f4f9763c8665b31d4" prot="public" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float * ssc_pi540D_plan::input3</definition>
+        <argsstring></argsstring>
+        <name>input3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="40" column="36" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structssc__pi540D__plan_1a4e67a3c2de1a2feaac9eb50611b2a02b" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* ssc_pi540D_plan::ix</definition>
+        <argsstring></argsstring>
+        <name>ix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="41" column="7" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structssc__pi540D__plan_1af88ec8edb409d95d10ff77054474309e" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int * ssc_pi540D_plan::iy</definition>
+        <argsstring></argsstring>
+        <name>iy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="41" column="10" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" line="37" column="16" bodyfile="/home/ABTLUS/eduardo.miqueles/ssc-pimega/cuda/src/ssc_pimega_pi540D.h" bodystart="37" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structssc__pi540D__plan_1ab0a19ba00ca3094c386f18344c97459f" prot="public" virt="non-virtual"><scope>ssc_pi540D_plan</scope><name>input</name></member>
+      <member refid="structssc__pi540D__plan_1add3be20b679c31ea3fbf093867f75c9f" prot="public" virt="non-virtual"><scope>ssc_pi540D_plan</scope><name>input0</name></member>
+      <member refid="structssc__pi540D__plan_1ac8b5861ef737c6fde07e43fd2e7f5b09" prot="public" virt="non-virtual"><scope>ssc_pi540D_plan</scope><name>input1</name></member>
+      <member refid="structssc__pi540D__plan_1a742da3eee458fd55e4c6373a9f8169d7" prot="public" virt="non-virtual"><scope>ssc_pi540D_plan</scope><name>input2</name></member>
+      <member refid="structssc__pi540D__plan_1ab006719c3eaaed2f4f9763c8665b31d4" prot="public" virt="non-virtual"><scope>ssc_pi540D_plan</scope><name>input3</name></member>
+      <member refid="structssc__pi540D__plan_1a4e67a3c2de1a2feaac9eb50611b2a02b" prot="public" virt="non-virtual"><scope>ssc_pi540D_plan</scope><name>ix</name></member>
+      <member refid="structssc__pi540D__plan_1af88ec8edb409d95d10ff77054474309e" prot="public" virt="non-virtual"><scope>ssc_pi540D_plan</scope><name>iy</name></member>
+      <member refid="structssc__pi540D__plan_1a87d748ca1ce14bfe3e583a35e89674f0" prot="public" virt="non-virtual"><scope>ssc_pi540D_plan</scope><name>output</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

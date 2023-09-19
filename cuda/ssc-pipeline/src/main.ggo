@@ -1,0 +1,21 @@
+package "ssc-pipeline"
+version "0.2.0"
+purpose
+"Parallel reading and processing using a superscalar pipeline
+
+Author(s):	Eduardo Miqueles
+"
+
+option "path" p "Input path for HDF5 file" string yes
+option "outpath" q "Output folder (default=`<path>/recon')" string no
+option "block" b "Blocksize" int optional default="10"
+option "gpu" g "GPU device indexes" int optional multiple
+option "timing" - "Print out timing measurements" optional
+option "save" - "Save processed data" optional 
+option "dataset" d "Dataset name for HDF5 file" string yes
+option "rank" r "Datatype order (ztyx or zyx)" string yes
+option "order" o "Loop order ('yx' or 'zx') " string yes
+option "initial" i "Initial image" int yes
+option "final" f "Final image" int yes
+option "uuid" u "UUID string" string yes
+option "shape" s "Output shape for the selected axis" int yes multiple

@@ -1,0 +1,14 @@
+135D
+====
+
+The available functions for computing PIMEGA/135D image restoration are listed below.
+
+FUNCTIONS
+*********
+
+.. autofunction:: sscPimega.pi135D.pi135D.dictionary135D
+.. autofunction:: sscPimega.pi135D.pi135D.geometry135D
+.. autofunction:: sscPimega.pi135D.pi135D.backward135D
+.. autofunction:: sscPimega.pi135D.pi135D.forward135D
+
+
