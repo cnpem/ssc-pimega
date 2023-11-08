@@ -30,6 +30,11 @@ if '--cuda' in sys.argv:
 install_requires = [
     'numpy>=1.7.0',
     'scipy>=0.12.0',
+    'matplotlib',
+    'h5py',
+    'scikit-image',
+    'zipp',
+    'six',
 ]
 
 
@@ -290,4 +295,3 @@ else:
 
 
 
-    
